@@ -31,4 +31,4 @@ jobs:
          run: Rscript -e "rsconnect::setAccountInfo(name='juliangrimm', token='${{ secrets.TOKEN }}', secret='${{ secrets.SECRET }}')"
        - id: deploy
          name: 💎 Deploy to shinyapps.io
-         run: Rscript -e "rsconnect::deployApp(appDir='myApp', appName='shinyapps', launch.browser=FALSE)"
+         run: Rscript -e "rsconnect::deployApp(appDir='./myApp/', appName='shinyapps', launch.browser=FALSE)"
