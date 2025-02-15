@@ -19,6 +19,8 @@ jobs:
          uses: r-lib/actions/setup-r@v2
          with:
            r-version: '4.4.2'
+       - name: check app dir
+         run: ls -lah myApp/
        - name: install libcurl 
          run: sudo apt-get install libcurl4-openssl-dev 
        - name: install rsconnect
