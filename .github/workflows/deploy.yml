@@ -19,7 +19,7 @@ jobs:
          with:
            r-version: '4.4.2'
        - name: install libcurl 
-         run: apt-get install libcurl4-openssl-dev 
+         run: sudo apt-get install libcurl4-openssl-dev 
        - name: install rsconnect
          run: Rscript -e "install.packages('rsconnect')"
        - name: Set account info
