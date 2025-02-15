@@ -1,6 +1,7 @@
 library(shiny)
 
 ui <- fluidPage(
+  "Did this deploy via github actions?",
   textInput("input", "Input"),
   actionButton("button", "button"),
   htmlOutput("output")
